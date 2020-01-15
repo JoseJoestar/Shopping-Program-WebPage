@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shopping Cart 3</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid" id="Jumbo">
+        <div class="container-fluid">
+            <h1 class="display-4">PDXNXT Shoppe</h1>
+            <p class="lead">Your Daily Airport Shopping Digest</p>
+
+            <form id="search">
+                <div id="container">
+
+                </div>
+        </div>
+        <div id = "searchBar">
+        <input type="text" placeholder="Search Store.." name="storeSearch" id="searchField">
+        <button type="submit">Searcho</button>
+    </div>
+    </div>
+    </form>
+    <div class="search-container">
+
+        <div class="row">
+            <div class="col">
+                <h4>Store Inventory</h4>
+                <div>
+                    <input type = "file" id = "file-input">
+                </div>
+                <table id="inventoryTable" class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Inventory</th>
+
+
+                        </tr>
+                    </thead>
+                    <tbody id="inventory">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col">
+                <h4>Your Cart</h4>
+                <div id="cart">
+                    Add Some Items to your Cart Below :D
+                    <ul class="list-group" id="shoppingList">
+
+                    </ul>
+
+                    <div id="Total"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src = "Items.js"></script>
+<script src = "Inventory.js"></script>
+
+<script src = "ShoppingCart.js"></script>
+
+<script src = "Utilities.js"></script>
+
+    <script src="index.js">
+    </script> 
+
+</body>
+
+</html>
